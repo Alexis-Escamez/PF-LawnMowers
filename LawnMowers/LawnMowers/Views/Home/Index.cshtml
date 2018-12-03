@@ -1,0 +1,17 @@
+﻿@model List<LawnMowers.Models.LawnMowersViewModel>
+
+@{
+    ViewBag.Title = "LAWN MOWERS";
+}
+
+<br>
+
+<br>
+<h2>Enter the sequence to start the simulation and click on the simulate button.</h2>
+@{Html.BeginForm("Result", "Home", FormMethod.Post);
+
+    <input type="text" name="chain" />
+    <br>
+    <input type="submit" value="Simulate" />
+
+}
